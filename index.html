@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Interface</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <!-- 新增的橫幅 -->
+    <div class="navbar">
+        <h1>輔大LLM</h1>
+    </div>
+
+    <div class="main-title">
+        <fieldset>
+            <legend><strong>問答機器人</strong></legend>
+
+            <!-- 聊天窗口容器 -->
+            <div class="chat-container">
+                <!-- 回應欄 -->
+                <div class="chat-box" id="chat-box">
+                    <div class="message bot-message">
+                        <p>您好，請問我可以如何幫助您?</p>
+                    </div>
+                </div>  
+
+                <!-- 輸入框 -->
+                <div class="input-box">
+                    <!-- 使用 placeholder 來顯示提示文字 -->
+                    <input type="text" id="user-input" placeholder="輸入訊息" />
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
